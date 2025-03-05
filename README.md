@@ -92,7 +92,7 @@ SET GLOBAL log_bin_trust_function_creators = 1;
 QUIT;
 ```
 
-Importar el esquema de base de datos de Zabbix:
+Importar el esquema de base de datos de Zabbix (Te pedirá la contraseña del usuario creado en la base de datos de zabbix):
 
 ```bash
 sudo zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
